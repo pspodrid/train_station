@@ -1,0 +1,8 @@
+<h2><%= @train.name %></h2>
+
+<form action="/trains/<%= @train.id %>" method="post">
+  <input name="_method" type="hidden" value="delete">
+  <button type="submit" class="btn btn-danger">Delete</button>
+</form>
+
+<a href="/trains/<%= @train.id %>/update">Update train</a>
